@@ -4,9 +4,9 @@ var
 inicio
  escreva("Informe um ângulo: ")
  leia (angulo)
- s3 <- tan(grauprad(angulo))
- s2 <- cos(grauprad(angulo))
  s1 <- sen(grauprad(angulo))
+ s2 <- cos(grauprad(angulo))
+ s3 <- tan(grauprad(angulo))
  escreval("O seno de ",angulo, " é:", s1)
  escreval("O cosseno de ",angulo, " é:", s2)
  escreva("A tangente de ",angulo, " é:", s3)
