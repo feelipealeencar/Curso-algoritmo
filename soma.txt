@@ -1,0 +1,11 @@
+algoritmo "soma entre dois números"
+var
+ N1, N2, soma: inteiro
+inicio
+ escreva ("Digite o primeiro número: ")
+ leia (N1)
+ escreva ("Digite o segundo número: ")
+ leia (N2)
+ soma <- N1 + N2
+ escreva ("A soma entre os dois número é: ", soma)
+fimalgoritmo
