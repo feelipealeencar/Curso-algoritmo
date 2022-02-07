@@ -1,0 +1,13 @@
+algoritmo "conversor grauprad"
+var
+ angulo , s1 , s2 , s3: real
+inicio
+ escreva("Informe um ângulo: ")
+ leia (angulo)
+ s3 <- tan(grauprad(angulo))
+ s2 <- cos(grauprad(angulo))
+ s1 <- sen(grauprad(angulo))
+ escreval("O seno de ",angulo, " é:", s1)
+ escreval("O cosseno de ",angulo, " é:", s2)
+ escreva("A tangente de ",angulo, " é:", s3)
+fimalgoritmo
