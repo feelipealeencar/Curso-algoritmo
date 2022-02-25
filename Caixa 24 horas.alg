@@ -4,8 +4,9 @@ var
    opcaocaixa, depositocaixa, saquecaixa: inteiro
    agenciatransferencia, contatransferencia: inteiro
    nomecliente: caractere
+procedimento topobanco24()
 inicio
-      escreval("------------------------")
+   escreval("------------------------")
       escreval("     BANCO 24 HORAS     ")
       escreval("------------------------")
       escreval("                        ")
@@ -16,6 +17,9 @@ inicio
       leia(agencia)
       escreva("Digite sua Conta: ")
       leia(conta)
+fimprocedimento
+inicio
+      topobanco24
       se (agencia = 123) e (conta = 321) entao
       escreval("------------------------")
       escreval("Você está no Banco Caixa")
