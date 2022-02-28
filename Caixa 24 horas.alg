@@ -4,9 +4,8 @@ var
    opcaocaixa, depositocaixa, saquecaixa: inteiro
    agenciatransferencia, contatransferencia: inteiro
    nomecliente: caractere
-procedimento topobanco24()
 inicio
-   escreval("------------------------")
+      escreval("------------------------")
       escreval("     BANCO 24 HORAS     ")
       escreval("------------------------")
       escreval("                        ")
@@ -17,9 +16,6 @@ inicio
       leia(agencia)
       escreva("Digite sua Conta: ")
       leia(conta)
-fimprocedimento
-inicio
-      topobanco24
       se (agencia = 123) e (conta = 321) entao
       escreval("------------------------")
       escreval("Você está no Banco Caixa")
@@ -28,12 +24,13 @@ inicio
       escreval(" [1] Para Saque ")
       escreval(" [2] Para Deposito ")
       escreval(" [3] Para Tranferência ")
-      escreval(" [4] Para Cartões ")
-      escreval(" [5] Para Segurança ")
+      escreval(" [4] Para Extrato ")
+      escreval(" [5] Para Cartões ")
+      escreval(" [6] Para Segurança ")
       escreva("Digite sua opção: ")
       leia(opcaocaixa)
       senao
-      escreval("Dados inexistentes")
+      escreval("Dados Inexistentes")
       fimse
            se (opcaocaixa = 1) entao
            escreval("Digite o valor: ")
@@ -47,8 +44,13 @@ inicio
                      escreval ("Agencia destino: ")
                      leia (agenciatransferencia)
                      escreval ("Conta destino: ")
-                     leia (contatransferencia)
+                      leia (contatransferencia)
+                              se (agenciatransferencia = 000) e (contatransferencia = 111) entao
+                              escreval("Cliente: Lola Alencar ")
+
            fimse
                 fimse
                      fimse
+                          fimse
 fimalgoritmo
+
