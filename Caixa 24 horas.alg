@@ -1,9 +1,24 @@
-algoritmo "caixa 24 horas"
+algoritmo "BANCO 24 HORAS"
 var
    agencia, conta: Real
    opcaocaixa, depositocaixa, saquecaixa: inteiro
    agenciatransferencia, contatransferencia: inteiro
    nomecliente: caractere
+procedimento opcoescaixa()
+inicio
+      escreval("------------------------")
+      escreval("Você está no Banco Caixa")
+      escreval("------------------------")
+      escreval("Cliente: Felipe Xavier")
+      escreval(" [1] Para Saque ")
+      escreval(" [2] Para Deposito ")
+      escreval(" [3] Para Tranferência ")
+      escreval(" [4] Para Extrato ")
+      escreval(" [5] Para Cartões ")
+      escreval(" [6] Para Segurança ")
+      escreva("Digite sua opção: ")
+      leia(opcaocaixa)
+fimprocedimento
 inicio
       escreval("------------------------")
       escreval("     BANCO 24 HORAS     ")
@@ -17,20 +32,16 @@ inicio
       escreva("Digite sua Conta: ")
       leia(conta)
       se (agencia = 123) e (conta = 321) entao
-      escreval("------------------------")
-      escreval("Você está no Banco Caixa")
-      escreval("------------------------")
-      escreval("Cliente: Felipe Xavier")
-      escreval(" [1] Para Saque ")
-      escreval(" [2] Para Deposito ")
-      escreval(" [3] Para Tranferência ")
-      escreval(" [4] Para Extrato ")
-      escreval(" [5] Para Cartões ")
-      escreval(" [6] Para Segurança ")
-      escreva("Digite sua opção: ")
-      leia(opcaocaixa)
+      opcoescaixa()
       senao
-      escreval("Dados Inexistentes")
+      repita
+      escreval("Dados Inexistentes ")
+      escreva("Digite sua Agência: ")
+      leia(agencia)
+      escreva("Digite sua Conta: ")
+      leia(conta)
+      ate (agencia = 123) e  (conta = 321) entao
+      opcoescaixa
       fimse
            se (opcaocaixa = 1) entao
            escreval("Digite o valor: ")
